@@ -2,11 +2,9 @@ import './App.css';
 import React from 'react';
 import Header from './Components/Header';
  
-function App() {
+const App = () => {
   return (
-    <>
-      <Header></Header>
-    </>
+      <Header />
   )
 }
  

@@ -26,13 +26,25 @@ header nav ul li{
   background-color: var(--common-white);
   border-radius: 8px;
   padding: 0 19px;
+  transition: 0.5s all;
+
 }
-header nav ul li a {
+header nav ul li a{
   text-decoration: none;
     transition: .3s;
     height: 40px;
     line-height: 40px;
     color: var(--font);
+    transition: 0.5s all;
+}
+header nav ul li:hover{
+  background: linear-gradient(97deg,#fa5252,#dd2476);
+}
+header nav ul li:hover a{
+  color: var(--common-white);
+}
+header nav ul li:hover a span svg path{
+  fill: var(--common-white);
 }
 .dark-theme-btn{
   display: flex;
@@ -43,10 +55,35 @@ header nav ul li a {
    height: 45px;
    border-radius:100%;
    background-color:var(--common-white);
+   display: grid;
+   place-items: center;
 }
 .dark-theme-btn .dark-mode{
   background-color:var(--common-black) ;
 }
+.display_property{
+  display: none;
+}
 .dark-theme-btn .menu_bar{
   background: linear-gradient(97deg,#fa5252,#dd2476);
+}
+.light-mode svg{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+}
+header nav ul li a span svg{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+@media (max-width:992px) {
+  .display_property{
+    display: block;
+  }
+  
 }
