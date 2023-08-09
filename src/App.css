@@ -1,33 +1,52 @@
-*,*::after,*::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --common-white: #fff;
+  --common-white-two: #fff;
+  --common-black: #000;
+  --theme-primary: #1b74e4;
+  --body-text: #44566c;
+  --body-heading: #000;
+  --heading-black: #0f172a;
+  --light-white: #f3f6f6;
+  --light-white-2: #f8fbfb;
+  --prink: #fff4f4;
+  --catkrill: #eef5fa;
 }
-.container{
-  width:1200px;
-  margin: 0 auto;
-} 
 header{
-  background-color:pink;
-}
-.app{
-  height:150px;
-  padding-block:20px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding:20px;
 }
-form{
+header nav ul{
   display: flex;
+  list-style: none;
   gap: 10px;
+  text-transform: uppercase;
 }
-form input{
-  outline: none;
-  padding: 6px 16px;
+header nav ul li{
+  background-color: var(--common-white);
+  border-radius: 8px;
+  padding: 0 19px;
 }
-form button{
-  padding: 6px 16px;
-  border: none;
-  color:green;
-  border: 1px solid green;
+header nav ul li a {
+  text-decoration: none;
+    transition: .3s;
+    height: 40px;
+    line-height: 40px;
+    color: var(--font);
+}
+.dark-theme-btn{
+  display: flex;
+  gap:10px;
+}
+.dark-theme-btn .light-mode{
+   width: 45px;
+   height: 45px;
+   border-radius:100%;
+   background-color:var(--common-white);
+}
+.dark-theme-btn .dark-mode{
+  background-color:var(--common-black) ;
+}
+.dark-theme-btn .menu_bar{
+  background: linear-gradient(97deg,#fa5252,#dd2476);
 }
