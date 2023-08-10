@@ -10,6 +10,7 @@
   --light-white-2: #f8fbfb;
   --prink: #fff4f4;
   --catkrill: #eef5fa;
+  --light-grey:#7b7b7b;
 }
 header{
   display: flex;
@@ -30,12 +31,15 @@ header nav ul li{
 
 }
 header nav ul li a{
-  text-decoration: none;
+   text-decoration: none;
     transition: .3s;
     height: 40px;
     line-height: 40px;
     color: var(--font);
     transition: 0.5s all;
+}
+header nav ul li a:nth-child(2){
+  display: contents;
 }
 header nav ul li:hover{
   background: linear-gradient(97deg,#fa5252,#dd2476);
@@ -79,8 +83,59 @@ header nav ul li a span svg{
   object-fit: contain;
   object-position: center;
 }
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
+.profile_img{
+  width: 280px;
+  height: 280px;
+  background-color: #000;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-block:30px 30px;
+}
+.profile_img  img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.profile a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.profile h1{
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+.profile h2{
+  margin-block:10px 30px;
+  color: var(--light-grey);
+  font-size: 14px;
+}
+.social_icons{
+  display: flex;
+  gap: 10px;
+  margin-block:0px 30px;
+}
+.social_icons span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--light-white);
+  text-align: center;
+  line-height: 40px;
+}
+.social_icons span svg{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+}
 @media (max-width:992px) {
   .display_property{
     display: block;

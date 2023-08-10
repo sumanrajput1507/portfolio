@@ -1,29 +1,9 @@
 import React,{useState} from 'react'
 
 const Header = () => {
-    const [myStyle, setMyStyle] = useState({
-        color:'white',
-        background:'black'
-    });
-    const toggleStyle=()=>{
-        if(myStyle.color === 'white'){
-            setMyStyle({
-                color:'black',
-                background:'white'
-            })
-        }
-            else{
-                setMyStyle({
-                    color:'white',
-                    background:'black'
-                });
-            }
-        }
-    
-
     return (
         <>
-        <header className='container' style={myStyle}>
+        <header>
         <div>
             <img src="" alt="Logo" />
         </div>
@@ -229,7 +209,7 @@ const Header = () => {
     </g>
   </svg>
          </div>
-         <div className='light-mode dark-mode' onClick={toggleStyle}>
+         <div className='light-mode dark-mode' >
          <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
