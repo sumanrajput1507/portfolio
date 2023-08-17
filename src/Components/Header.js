@@ -9,7 +9,7 @@ const Header = () => {
         </div>
        <nav>
          <ul>
-            <li> <a href="/"><span> <svg
+            <li> <a href="./about.js"><span> <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     xmlnsSvgjs="http://svgjs.com/svgjs"
