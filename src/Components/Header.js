@@ -1,7 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = () => { 
+  const [theme, setTheme] = useState('light_theme')
+ const toggleTheme = () =>{
+    if(theme === 'light_theme'){
+      setTheme('dark_theme')
+    }else{
+      setTheme('light_theme')
+    }
+    console.log("hello")
+  }
+    useEffect(() => {
+    document.body.className = theme
+  }, [theme]);
   return (
     <>
       <header>
@@ -177,7 +189,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="dark-theme-btn">
-          <div className="light-mode">
+          <div className="light-mode" onClick={toggleTheme}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"

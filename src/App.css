@@ -1,4 +1,4 @@
-:root {
+.light_theme{
   --common-white: #fff;
   --common-white-two: #fff;
   --common-black: #000;
@@ -12,7 +12,16 @@
   --catkrill: #eef5fa;
   --light-grey: #7b7b7b;
 }
-
+.dark_theme{
+  --common-white: #000;
+  --common-black: #fff;
+}
+.dark_theme{
+  background: url(https://bostami-bootstrap-nextjs.vercel.app/assets/img/bg/page-bg-dark-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* header css */
 header {
   display: flex;
@@ -35,7 +44,7 @@ header nav ul li a {
   text-decoration: none;
   transition: 0.3s;
   min-height: 40px;
-  color: var(--font);
+  color: var(--common-black);
   transition: 0.5s all;
   display: flex;
   gap: 5px;
@@ -64,6 +73,7 @@ header nav ul li:hover a span svg path {
   background-color: var(--common-white);
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 .dark-theme-btn .dark-mode {
   background-color: var(--common-black);
