@@ -3,21 +3,21 @@ import React from 'react'
 function About() {
   return (
     <>
-<section classNameName='about_main'>
+<section className='about_main'>
        <h2>About Me </h2>
-        <div classNameName="about_row">
-            <div classNameName='col_4'>
-             <img src="https://images.unsplash.com/photo-1580990827798-54ecdeeac2a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="profile-photo" />
+        <div className="about_row">
+            <div className='col_4'>
+             <img src="https://ik.imagekit.io/7bzuvmcmp/My%20profile%20image/My%20profile.jpg?updatedAt=1692427371015&tr=w-1200%2Ch-628%2Cfo-auto" alt="profile-photo" />
             </div>
-            <div classNameName='col_8'>
+            <div className='col_8'>
                <h4>Who am i?</h4>
-               <p classNameName='margin'>Hello and thank you for visiting my portfolio website. I'm Suman Devi, a passionate and creative front-end developer dedicated to crafting user-friendly and visually appealing web experiences.</p>
+               <p className='margin'>Hello and thank you for visiting my portfolio website. I'm Suman Devi, a passionate and creative front-end developer dedicated to crafting user-friendly and visually appealing web experiences.</p>
                <h4>Experience </h4>
                <p>Front-End Developer at Venturpact: Collaborated with cross-functional teams to deliver visually stunning and performant web applications.</p>
                <h3>personal info</h3>
-               <div classNameName='contact_details'>
-                <div classNameName='contact_icons'>
-                    <span classNameName='contact_svg'> <svg
+               <div className='contact_details'>
+                <div className='contact_icons'>
+                    <span className='contact_svg'> <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     xmlnsSvgjs="http://svgjs.com/svgjs"
@@ -46,13 +46,13 @@ function About() {
       />
     </g>
   </svg></span>
-                    <div classNameName='details'>
+                    <div className='details'>
                         <span>PhoneNo. </span>
                         <span>+919877253317</span>
                     </div>
                 </div>
-                <div classNameName='contact_icons'>
-                    <span classNameName='contact_svg'>
+                <div className='contact_icons'>
+                    <span className='contact_svg'>
                     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -77,13 +77,13 @@ function About() {
     </g>
   </svg>
                     </span>
-                    <div classNameName='details'>
+                    <div className='details'>
                         <span>Email </span>
                         <span>suman.rajput1507@gmail.com</span>
                     </div>
                 </div>
-                <div classNameName='contact_icons'>
-                    <span classNameName='contact_svg'>
+                <div className='contact_icons'>
+                    <span className='contact_svg'>
                     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -118,13 +118,13 @@ function About() {
     </g>
   </svg>
                     </span>
-                    <div classNameName='details'>
+                    <div className='details'>
                         <span>Location</span>
                         <span>Jalandhar Punjab</span>
                     </div>
                 </div>
-                <div classNameName='contact_icons'>
-                    <span classNameName='contact_svg'>
+                <div className='contact_icons'>
+                    <span className='contact_svg'>
                     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -167,14 +167,69 @@ function About() {
     </g>
   </svg>
                     </span>
-                    <div classNameName='details'>
+                    <div className='details'>
                         <span>Birthday </span>
                         <span>September 7,1994</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+        <div className='skill_Category'>
+          <h3>What I Do!</h3>
+          <div className='content_box'>
+              <div className='design bg_pink'>
+               <img src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/design.svg"/>
+               <div className='design_content'>
+                  <h5>Ui/Ux Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+
+                  </div>
+              </div>
+              <div className='design bg_catkrill'>
+              <img src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/app-development.svg"/>
+              <div className='design_content'>
+                  <h5>App Development</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+
+                  </div>
+              </div>
+              <div className='design bg_pink'>
+              <img src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/photograph.svg"/>
+              <div className='design_content'>
+                  <h5>Photography</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+
+                  </div>
+              </div>
+              <div className='design bg_catkrill'>
+              <img src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/webdev.svg"/>
+                  <div className='design_content'>
+                  <h5>Web Development</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+
+                  </div>
+              </div>
+              <div className='design bg_pink'>
+              <img src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/management.svg"/>
+              <div className='design_content'>
+                  <h5>Management</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+
+                  </div>
+              </div>
+              <div className='design bg_catkrill'>
+              <img src="https://bostami-bootstrap-nextjs.vercel.app/assets/img/webdev.svg"/>
+              <div className='design_content'>
+                  <h5>Web Development</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+
+                  </div>
+              </div>
+             
+
+          </div>
+        </div>
    </section>
     </>
   )
