@@ -15,6 +15,7 @@
 .dark_theme{
   --common-white: #000;
   --common-black: #fff;
+  --body-text: #a6a6a6;
 }
 .dark_theme{
   background: url(https://bostami-bootstrap-nextjs.vercel.app/assets/img/bg/page-bg-dark-2.jpg);
@@ -22,6 +23,43 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.dark_theme header nav ul li{
+  background-color: #1d1d1d;
+}
+.dark_theme header nav ul li a{
+  color:#a6a6a6;
+}
+.dark_theme .profile h1{
+  color: #fff;
+}
+.dark_theme .profile h2{
+  background-color: #1d1d1d;
+  padding:10px 20px;
+  border-radius: 4px;
+  color: #a6a6a6;
+}
+.dark_theme header nav ul li  span:hover{
+  fill:#fff;
+}
+.dark_theme header nav ul li a svg path {
+  fill:#a6a6a6;
+}
+.dark_theme header nav ul li:hover a span svg path {
+  fill:#fff;
+}
+.dark_theme .profile a{
+  color: #fff;
+}
+.dark_theme .about_main{
+  background-color: #111111;
+}
+.dark_theme .social_icons span{
+  background-color: #1d1d1d;
+}
+.dark_theme header nav ul li a :hover{
+  color: #fff;
+}
+
 /* header css */
 header {
   display: flex;
@@ -129,7 +167,7 @@ header nav ul li a span svg {
     transition: .3s;
 }
 .profile h1 {
-  font-size: 20px;
+  font-size: 26px;
   font-family: "Roboto Slab", serif;
 }
 .profile h2 {
