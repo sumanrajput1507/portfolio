@@ -3,17 +3,25 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => { 
   const [theme, setTheme] = useState('light_theme')
+  const[nav,setNav]=useState(false)
  const toggleTheme = () =>{
     if(theme === 'light_theme'){
       setTheme('dark_theme')
+      setNav(!nav)
     }else{
       setTheme('light_theme')
+      setNav(!nav)
+
     }
     console.log("hello")
   }
     useEffect(() => {
     document.body.className = theme
   }, [theme]);
+
+  const showMenu =()=>{
+    
+  }
   return (
     <>
       <header>
@@ -189,7 +197,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="dark-theme-btn">
-          <div className="light-mode" onClick={toggleTheme}>
+          { !nav && <div className="light-mode" onClick={toggleTheme}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -215,8 +223,8 @@ const Header = () => {
                 />
               </g>
             </svg>
-          </div>
-          <div className="light-mode dark-mode">
+          </div>}
+          {nav && <div className="light-mode dark-mode" onClick={toggleTheme}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -239,11 +247,11 @@ const Header = () => {
                 />
               </g>
             </svg>
-          </div>
+          </div>}
           <div className="display_property">
-            <span className="light-mode menu_bar">
+            <span className="light-mode menu_bar" onClick={showMenu}>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/~svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 xmlnsSvgjs="http://svgjs.com/svgjs"
                 width={512}
