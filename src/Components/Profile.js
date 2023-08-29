@@ -6,7 +6,7 @@ function Profile() {
       <div className="profile">
         <div className="profile_img">
           <img
-            src="https://ik.imagekit.io/7bzuvmcmp/My%20profile%20image/My%20profile.jpg?updatedAt=1692427371015&tr=w-1200%2Ch-628%2Cfo-auto"
+            src="https://dlvkyia8i4zmz.cloudfront.net/JuiRQd8jTXKHVVzGCrgt_My_profile.jpg"
             alt="profileimage"
           />
         </div>

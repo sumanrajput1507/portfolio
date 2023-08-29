@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Header = () => { 
+const Header = (props) => { 
   const [theme, setTheme] = useState('light_theme')
   const[nav,setNav]=useState(false)
  const toggleTheme = () =>{
@@ -59,7 +59,7 @@ const Header = () => {
                     </g>
                   </svg>
                 </span>
-                <span>home</span>
+                <span>{props.home}</span>
               </NavLink>
             </li>
             <li>
@@ -89,7 +89,7 @@ const Header = () => {
                     </g>
                   </svg>
                 </span>
-                <span>about</span>
+                <span>{props.about}</span>
               </NavLink>
             </li>
             <li>
@@ -125,7 +125,7 @@ const Header = () => {
                     </g>
                   </svg>
                 </span>
-                <span>resume</span>
+                <span>{props.resume}</span>
               </NavLink>
             </li>
             <li>
@@ -155,7 +155,7 @@ const Header = () => {
                     </g>
                   </svg>
                 </span>
-                <span>work</span>
+                <span>{props.work}</span>
               </NavLink>
             </li>
             <li>
@@ -191,7 +191,7 @@ const Header = () => {
                     </g>
                   </svg>
                 </span>
-                <span>contact</span>
+                <span>{props.contact}</span>
               </NavLink>
             </li>
           </ul>

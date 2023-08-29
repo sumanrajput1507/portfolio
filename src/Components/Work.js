@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Work() {
+
   return (
-    <div>Work</div>
+    <>
+     <h1>my Work Page</h1>
+    </>
   )
 }
 

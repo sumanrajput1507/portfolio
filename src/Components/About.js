@@ -7,7 +7,7 @@ function About() {
        <h2>About Me </h2>
         <div className="about_row">
             <div className='col_4'>
-             <img src="https://ik.imagekit.io/7bzuvmcmp/My%20profile%20image/My%20profile.jpg?updatedAt=1692427371015&tr=w-1200%2Ch-628%2Cfo-auto" alt="profile-photo" />
+             <img src="https://dlvkyia8i4zmz.cloudfront.net/JuiRQd8jTXKHVVzGCrgt_My_profile.jpg" alt="profile-photo" />
             </div>
             <div className='col_8'>
                <h4>Who am i?</h4>

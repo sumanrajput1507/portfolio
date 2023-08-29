@@ -14,7 +14,7 @@ const App = () => {
     <>
       <div className="container">
         <BrowserRouter>
-          <Header />
+          <Header  home="Home" about="About" resume="Resume" work="Work" contact="Contact"/>
           <Routes>
             <Route exact path="/" element={<Profile />} />
             <Route exact path="/about" element={<About />} />

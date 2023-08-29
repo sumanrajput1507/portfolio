@@ -1,6 +1,18 @@
-import React from "react";
+import React, {useState } from "react";
 
 function Contact() {
+  const [text,setText]=useState({
+    firstname:"",
+    email:"",
+    message:""
+  })
+
+  const handleClick=() =>{
+    setText("My Name is suman")
+  }
+  const handleChange=()=>{
+      console.log("change text")
+  }
   return (
     <>
       <section className="about_main">
@@ -41,19 +53,18 @@ function Contact() {
                design work or partnerships.</h3>
                <div className="input_box">
                <label htmlFor="">Name *</label>
-               <input type="text" />
+               <input type="text" name="firstname"/>
                   
                </div>
                <div className="input_box">
                <label htmlFor="">Email *</label>
-               <input type="email" />
-                  
+               <input type="email" value={text} name="email"/> 
                </div>
                <div className="input_box">
                <label htmlFor="">Message *</label>
-               <textarea name="message" class="input-box message false " cols="30" rows="10"></textarea>
+               <textarea name="message" class="input-box message false " cols="30" rows="10" ></textarea>
                </div>
-               <button>Submit</button>
+               <button onClick={handleClick}>Submit</button>
           </form>
         </div>
       </section>
